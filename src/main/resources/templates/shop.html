@@ -1,0 +1,59 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>-->
+<!--    <div>-->
+<!--        <form th:action="@{/logout}" method="post">-->
+<!--            <input type="submit" value="Sign Out"/>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <form type="get" action="filter">-->
+<!--            <input type="text" name="carModel">-->
+<!--            <button type="submit">Find</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <form method="post" action="">-->
+<!--            <label>Detail's id</label>-->
+<!--            <input type="number" min="1"  pattern="[0-9]+" name="detailId">-->
+
+<!--            <label>Car brand</label>-->
+<!--            <input type="text" name="carBrand">-->
+
+<!--            <label>Car model</label>-->
+<!--            <input type="text" name="carModel">-->
+
+<!--            <label>Price</label>-->
+<!--            <input type="number" pattern="[0-9]{1,18}.[0-9]{1,2}" name="price">-->
+
+<!--            <button type="submit">Добавить</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Id</th>-->
+<!--                <th>Detail Id</th>-->
+<!--                <th>Car brand</th>-->
+<!--                <th>Car model</th>-->
+<!--                <th>Price</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+
+<!--        <tbody>-->
+<!--            <tr th:each="offer : ${offers}">-->
+<!--                <td><span th:text="${offer.getId()}"></span></td>-->
+<!--                <td><span th:text="${offer.getDetailId()}"></span></td>-->
+<!--                <td><span th:text="${offer.getCarBrand()}"></span></td>-->
+<!--                <td><span th:text="${offer.getCarModel()}"></span></td>-->
+<!--                <td><span th:text="${offer.getPrice()}"></span></td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--</body>-->
+<!--</html>-->
